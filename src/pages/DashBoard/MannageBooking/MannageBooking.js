@@ -56,7 +56,6 @@ const ManageBookings = () => {
                                     <td className="px-5">{booking.date.slice(0, 10)}</td>
                                     <td className="px-5">{booking.service.data.name}</td>
                                     <td className="px-5">${booking.service.data.price}</td>
-                                    <td className="px-5">${booking.service.data.quantity}</td>
                                     {
                                         booking.status === 'Pending' 
                                         ?
