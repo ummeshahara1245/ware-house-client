@@ -32,11 +32,10 @@ const Booking = ({service}) => {
         <div>
             <div className="mb-5 mt-5">
                 <form className="flex flex-col w-80 mx-auto" onSubmit={handleSubmit(onSubmit)}>
-                    <input defaultValue={user?.displayName} className="border-2 border-gray-300 m-2 px-3 hover:border-red-600 py-2 rounded-full " {...register("name", {required: true})} placeholder="Name"/>
-                    <input defaultValue={user?.email} className="border-2 border-gray-300 m-2 px-3 hover:border-red-600 py-2 rounded-full " {...register("quantity", {required: true})} placeholder="Email"/>
-                    <input defaultValue={user?.phone}className="border-2 border-gray-300 m-2 px-3 hover:border-red-600 py-2 rounded-full " type="photo" {...register("phone", {required: true})} placeholder="Phone"/>
-                    <input defaultValue={user?.address} className="border-2 border-gray-300 m-2 px-3 hover:border-red-600 py-2 rounded-full " {...register("address", {required: true})} placeholder="Address"/>
-                    <input className="py-2 px-5 rounded-full mx-auto bg-green-600 text-white text-xl font-semibold mt-3" type="submit" value="Booking Please" />
+                
+                    <input defaultValue={user?.quantity}className="border-2 border-gray-300 m-2 px-3 hover:border-red-600 py-2 rounded-full " type="photo" {...register("quantity", {required: true})} placeholder="quantity"/>
+                   
+                    <input className="py-2 px-5 rounded-full mx-auto bg-green-600 text-white text-xl font-semibold mt-3" type="submit" value="Hit me" />
                 </form>
             </div>
         </div>
