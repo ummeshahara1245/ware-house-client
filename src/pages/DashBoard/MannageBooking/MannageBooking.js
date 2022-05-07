@@ -8,7 +8,7 @@ const ManageBookings = () => {
     const {user} = useAuth();
 
     useEffect(() => {
-        fetch('https://bloodcurdling-cat-39172.herokuapp.com/bookings')
+        fetch('http://localhost:5000/bookings')
         .then(res => res.json())
         .then(data => setBookings(data));
     }, [])
@@ -20,7 +20,7 @@ const ManageBookings = () => {
            console.log(id)
            const proceed = window.confirm('Are you sure, you want to delete?')
            if (proceed) {
-               const url = `https://bloodcurdling-cat-39172.herokuapp.com/bookings/${id}`;
+               const url = `http://localhost:5000/bookings/${id}`;
                fetch(url, {
                        method: 'DELETE',
                    })
@@ -56,6 +56,7 @@ const ManageBookings = () => {
                                     <td className="px-5">{booking.date.slice(0, 10)}</td>
                                     <td className="px-5">{booking.service.data.name}</td>
                                     <td className="px-5">${booking.service.data.price}</td>
+                                    <td className="px-5">${booking.service.data.quantity}</td>
                                     {
                                         booking.status === 'Pending' 
                                         ?

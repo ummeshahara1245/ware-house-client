@@ -5,7 +5,7 @@ const AllServices = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('https://bloodcurdling-cat-39172.herokuapp.com/services')
+        fetch('http://localhost:5000/services')
         .then(res => res.json())
         .then(data => setServices(data))
     },[])
@@ -14,7 +14,7 @@ const AllServices = () => {
         console.log(id)
         const proceed = window.confirm('Are you sure, you want to delete?')
         if (proceed) {
-            const url = `https://bloodcurdling-cat-39172.herokuapp.com/services/${id}`;
+            const url = `http://localhost:5000/services/${id}`;
             fetch(url, {
                     method: 'DELETE',
                 })
@@ -37,7 +37,7 @@ const AllServices = () => {
                     <tbody>
                         <tr className="bg-green-500 text-white text-center">
                             <th className="px-3 ">Product Name</th>
-                            <th className="px-3 ">Product Detail</th>
+                            <th className="px-3 ">Product Quantity</th>
                             <th className="px-3 ">Product Price</th>
                             <th className="px-3 ">Admin</th>
                             <th className="px-3 ">Delete</th>

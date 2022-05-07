@@ -8,7 +8,7 @@ const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
     
     const onSubmit = data => {
-        fetch('https://bloodcurdling-cat-39172.herokuapp.com/services', {
+        fetch('http://localhost:5000/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -34,9 +34,11 @@ const AddService = () => {
                 <form className="flex flex-col w-80" onSubmit={handleSubmit(onSubmit)}>
                     <input className="border-2 border-gray-300 m-2 px-2 rounded" {...register("name", {required: true})} placeholder="Service Name"/>
                     <textarea className="border-2 border-gray-300 m-2 px-2 rounded" {...register("description", {required: true})} placeholder="Service description"/>
-                    <input className="border-2 border-gray-300 m-2 px-2 rounded" {...register("duration", {required: true})} placeholder="Service duration"/>
+                   
                     <input className="border-2 border-gray-300 m-2 px-2 rounded" {...register("photoUrl", {required: true})} placeholder="Photo Url"/>
                     <input className="border-2 border-gray-300 m-2 px-2 rounded" type="number" {...register("price", {required: true})} placeholder="Service Price"/>
+                    <input className="border-2 border-gray-300 m-2 px-2 rounded" type="number" {...register("quantity", {required: true})} placeholder="Quantity"/>
+                    <input className="border-2 border-gray-300 m-2 px-2 rounded" {...register("SupplierName", {required: true})} placeholder="supplier Name"/>
                     < input className = "w-40 mx-auto py-2 rounded text-lg text-white font-semibold mt-4 transition duration-500 ease-in-out bg-green-600 hover:bg-green-800 transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-green-400 to-green-500"
                     type = "submit"
                     value = "Add Service" / >
