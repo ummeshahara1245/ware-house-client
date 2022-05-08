@@ -5,7 +5,7 @@ const Service = ({service}) => {
     const { name, quantity, photoUrl,description,price ,SupplierName} = service?.data;
     const history = useHistory();
     const handleBooking = id => {
-        history.push(`/orderReview/${id}`)
+        history.push(`/stockUpdate/${id}`)
     }
     return (
         <div className="">

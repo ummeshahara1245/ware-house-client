@@ -1,10 +1,11 @@
 import React from 'react';
 
 const ServiceTable = ({service, handleDeleteService}) => {
-    const {name, duration, price, } = service.data;
+    const {name, duration, price,photoUrl } = service.data;
 
     return (
         <tr className="mt-2 border border-black text-center hover:bg-blue-50 transition duration-300 ease-in-out">
+           <img className='image-table' style={{height:'50px',width:'60px'}} src={photoUrl} alt="" />
             <td className="px-3"> {name}</td>
             <td className="px-3"> {duration}</td>
             <td className="px-3"> {price}</td>

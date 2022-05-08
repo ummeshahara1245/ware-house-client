@@ -42,6 +42,7 @@ const AllServices = () => {
                             <th className="px-3 ">Admin</th>
                             <th className="px-3 ">Delete</th>
                             <th className="px-3 ">Edit</th>
+                            <th className="px-3 ">image</th>
                         </tr>
                             {
                                 services.map(service => <ServiceTable key={service._id} service={service} handleDeleteService={handleDeleteService} />)

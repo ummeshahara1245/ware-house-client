@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Booking from '../Booking/Booking';
 
 const OrderReview = () => {
@@ -21,7 +21,7 @@ const OrderReview = () => {
                     <h4>{service?.data.name}</h4>
                     <h5>Service quantity:{service?.data.quantity}</h5>
                     <h6>price: {service?.data.price} BDT</h6>
-                    <p>Supplier Name{service?.data.SupplierName}</p>
+                    <p>Supplier Name:{service?.data.SupplierName}</p>
 
                     <p>{service?.data.description}</p>
                     <button className="bg-red-400 px-3 py-1 rounded-2xl text-white mb-2">delivered</button>

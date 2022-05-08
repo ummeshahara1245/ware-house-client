@@ -13,7 +13,7 @@ const Sidebar = () => {
         <button className="text-green-500 text-2xl font-semibold w-full mb-10 mt-2" onClick={handleHome}><i class="fas fa-university"></i> Home</button><br />
         <div className="lg:h-screen">
           <li className="list-none bg-green-500 px-8 py-2 border border-green-500 text-white">
-            <Link className="text-white no-underline font-semibold" to="/manageBookings"><i class="fas fa-align-justify"></i> Manage Booking</Link><br />
+            <Link className="text-white no-underline font-semibold" to="/manageBookings"><i class="fas fa-align-justify"></i> Manage Inventory</Link><br />
           </li>
           <li className="list-none bg-green-500 px-8 py-2 border border-green-500 text-white">
             <Link className="text-white no-underline font-semibold" to="/addService"><i class="fas fa-plus-square"></i> Add Service</Link><br />
