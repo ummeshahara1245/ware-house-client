@@ -66,7 +66,7 @@ const Card = ({ img }) => {
         }}
       />
       <p>
-        I Like Their service. I will suggest them to the people who wants to travel. They are doing excellent. Goodluck for future.  
+        I Like Their service.this is best grocery shop 
       </p>
     </div>
   );

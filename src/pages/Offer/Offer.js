@@ -50,7 +50,7 @@ const Offer = () => {
     </div>
   </div>
   <div className="col">
-    <div className="card h-100 "style={{backgroundColor:'#dff1ff'}}>
+    <div className="card  h-100 "style={{backgroundColor:'#dff1ff'}}>
       <img src="https://cdn.shopify.com/s/files/1/0108/7370/0415/files/icon-1_80x80.png?v=1580284251" className="card-img-top" alt="..."/>
       <div className="card-body">
         <h5 className="card-title text-center">Eggs</h5>

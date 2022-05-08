@@ -19,6 +19,7 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import { Switch } from 'react-router-dom';
 import Login from './pages/Login/Login/Login';
 import Register from './pages/Login/Register/Register';
+import FullServices from './pages/Home/FullServices/FullServices';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
             
             <Route path="/home">
               <Home />
+            </Route>
+            <Route path="/services">
+              <FullServices />
             </Route>
             <Route path="/blog">
               <Blog />
