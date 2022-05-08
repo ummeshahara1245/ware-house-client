@@ -7,7 +7,8 @@ const Footer = () => {
 
 <div className="footer-left">
 
-    <h3>Ware<span>House</span></h3>
+    <h3>AvenDo
+<span>House</span></h3>
 
     <p className="footer-links">
         <a href="#">Home</a>
@@ -22,7 +23,8 @@ const Footer = () => {
         <a href="#">Contact</a>
     </p>
 
-    <p className="footer-company-name">Warehouse &copy; 2022</p>
+    <p className="footer-company-name">AvenDo
+ &copy; 2022</p>
 </div>
 
 <div className="footer-center">
@@ -39,7 +41,8 @@ const Footer = () => {
 
     <div>
         <i className="fa fa-envelope"></i>
-        <p><a href="mailto:support@company.com">contact@warehouse.com</a></p>
+        <p><a href="mailto:support@company.com">contact@AvenDo
+.com</a></p>
     </div>
 
 </div>
@@ -47,7 +50,8 @@ const Footer = () => {
 <div className="footer-right">
 
     <p className="footer-company-about">
-        <span>About warehouse</span>
+        <span>About AvenDo
+</span>
        this is a warehouse website
     </p>
 

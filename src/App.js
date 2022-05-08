@@ -15,7 +15,7 @@ import Booking from './pages/Booking/Booking';
 import AddService from './pages/DashBoard/AddService/AddService';
 import ManageBookings from './pages/DashBoard/MannageBooking/MannageBooking';
 import Blog from './pages/Blog/Blog';
-import AboutUs from './pages/AboutUs/AboutUs';
+// import AboutUs from './pages/AboutUs/AboutUs';
 import { Switch } from 'react-router-dom';
 import Login from './pages/Login/Login/Login';
 import Register from './pages/Login/Register/Register';
@@ -40,9 +40,9 @@ function App() {
             <Route path="/blog">
               <Blog />
             </Route>
-            <Route path="/about">
+            {/* <Route path="/about">
               <AboutUs />
-            </Route>
+            </Route> */}
             <Route path="/login">
               <Login />
             </Route>
