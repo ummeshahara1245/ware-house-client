@@ -7,7 +7,7 @@ const Footer = () => {
 
 <div className="footer-left">
 
-    <h3>visit<span>Nature</span></h3>
+    <h3>Ware<span>House</span></h3>
 
     <p className="footer-links">
         <a href="#">Home</a>
@@ -22,7 +22,7 @@ const Footer = () => {
         <a href="#">Contact</a>
     </p>
 
-    <p className="footer-company-name">vistNature &copy; 2021</p>
+    <p className="footer-company-name">Warehouse &copy; 2022</p>
 </div>
 
 <div className="footer-center">
