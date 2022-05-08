@@ -16,8 +16,7 @@ const Footer = () => {
         ·
         <a href="#">Pricing</a>
         ·
-        <a href="#">About</a>
-        ·
+     
         <a href="#">Faq</a>
         ·
         <a href="#">Contact</a>
@@ -40,7 +39,7 @@ const Footer = () => {
 
     <div>
         <i className="fa fa-envelope"></i>
-        <p><a href="mailto:support@company.com">contact@visitnature.com</a></p>
+        <p><a href="mailto:support@company.com">contact@warehouse.com</a></p>
     </div>
 
 </div>
@@ -48,8 +47,8 @@ const Footer = () => {
 <div className="footer-right">
 
     <p className="footer-company-about">
-        <span>About visitNature</span>
-        VisitNature is a most popular travell service provider in bangladesh for our best services
+        <span>About warehouse</span>
+       this is a warehouse website
     </p>
 
     <div className="footer-icons">
