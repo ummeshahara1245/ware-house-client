@@ -4,10 +4,8 @@ import OrderReview from './pages/OrderReview/OrderReview';
 import OrderPlace from './pages/OrderPlace/OrderPlace';
 import Footer from './Shares/Footer/Footer';
 import Header from './Shares/Header';
-import LoginPage from './pages/Login/LoginPage/LoginPage';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
 } from "react-router-dom";
 import Dashboard from './pages/DashBoard/Dashboard/Dashboard';
@@ -18,6 +16,9 @@ import AddService from './pages/DashBoard/AddService/AddService';
 import ManageBookings from './pages/DashBoard/MannageBooking/MannageBooking';
 import Blog from './pages/Blog/Blog';
 import AboutUs from './pages/AboutUs/AboutUs';
+import { Switch } from 'react-router-dom';
+import Login from './pages/Login/Login/Login';
+import Register from './pages/Login/Register/Register';
 
 function App() {
   return (
@@ -39,8 +40,11 @@ function App() {
               <AboutUs />
             </Route>
             <Route path="/login">
-              <LoginPage />
+              <Login />
             </Route>
+            <Route path="/register">
+            <Register />
+          </Route>
             <PrivateRoute path="/dashboard">
               <Dashboard />
             </PrivateRoute>
