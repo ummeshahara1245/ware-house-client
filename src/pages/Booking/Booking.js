@@ -12,7 +12,7 @@ const Booking = ({service}) => {
     const status = 'Approved';
     
     const onSubmit = data => {
-        fetch('http://localhost:5000/services/booking', {
+        fetch('https://intense-gorge-95170.herokuapp.com/services/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

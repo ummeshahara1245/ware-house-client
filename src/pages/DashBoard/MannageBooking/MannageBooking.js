@@ -8,7 +8,7 @@ const ManageBookings = () => {
     const {user} = useAuth();
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://intense-gorge-95170.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => setBookings(data));
     }, [])
@@ -20,7 +20,7 @@ const ManageBookings = () => {
            console.log(id)
            const proceed = window.confirm('Are you sure, you want to delete?')
            if (proceed) {
-               const url = `http://localhost:5000/bookings/${id}`;
+               const url = `https://intense-gorge-95170.herokuapp.com/bookings/${id}`;
                fetch(url, {
                        method: 'DELETE',
                    })

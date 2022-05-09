@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './pages/Home/Home/Home';
+import 'bootstrap/dist/css/bootstrap.css';
 import OrderReview from './pages/OrderReview/OrderReview';
 import OrderPlace from './pages/OrderPlace/OrderPlace';
 import Footer from './Shares/Footer/Footer';
